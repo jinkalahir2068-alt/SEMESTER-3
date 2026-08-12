@@ -1,0 +1,35 @@
+<!-- Design a registration form that uses type="email", type="number" and pattern
+attributes to validate email format, number ranges, and custom patterns (e.g.,
+password rules). -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student Registration form</title>
+</head>
+<body>
+	<form>
+		<h1 align="center" >Student Registration</h1>
+		<table align="center">
+			<tr>
+				<td ><label>Full Name </label></td>
+				<td><input type="text" placeholder="Enter Your Full Name" required></td>
+			</tr>
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type="Email" placeholder="Enter Your Email" required 
+					pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"></td>
+			</tr>
+			<tr>
+				<td><label>Mobile Number</label></td>
+				<td><input type="Mobile" placeholder="Enter Your Mobile Number" required 
+					pattern="[6-9][0-9]{9}"> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
