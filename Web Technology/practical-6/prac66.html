@@ -1,0 +1,25 @@
+<!-- Create a feedback form where minlength, maxlength, min, and max attributes are used
+to control input length and numerical value range. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	 <h1>Feedback Form</h1>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" minlength="3" maxlength="15" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" minlength="10" maxlength="200"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
