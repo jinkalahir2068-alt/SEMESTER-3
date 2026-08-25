@@ -31,25 +31,35 @@ struct Interval pop()
 }
 void main()
 {
+    
     struct Interval arr[] = {{1,3},{2,4},{6,8},{9,10}};
-    int num = sizeof(arr) / sizeof(arr[0]);
-    int i;
-    for (i = 0; i < num; i++)
-    {
-        if (top == -1 || s[top].end < arr[i].start)
-        {
-            push(arr[i]);
-        }
-        else if (s[top].end < arr[i].end)
-        {
-            s[top].end = arr[i].end;
+    struct Interval temp;
+    for(int i=0;i<3;i++){
+        for(int j=i+1;j<3;j++){
+            if(arr[i].start > arr[j].start){
+               temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
         }
     }
-    printf("Merged Intervals: ");
+    push(arr[0]);
+    for(int i=1;i<4;i++){
+        temp=pop();
+        if(temp.end>=arr[i].start){
+            temp.end=arr[i].end;
+            push(temp);
+        }
+        else{
+            push(temp);
+            push(arr[i]);
+        }
+    }
+    printf("Output: ");
     while (top != -1)
     {
-        struct Interval interval = pop();
-        printf("[%d, %d] ", interval.start, interval.end);
+        temp = pop();
+        printf("{%d, %d} ", temp.start, temp.end);
     }
 }
 
