@@ -1,0 +1,11 @@
+ul > li {
+    color: blue;
+}
+
+h2 + p {
+    color: red;
+}
+
+input[type="text"] {
+    background-color: yellow;
+}
