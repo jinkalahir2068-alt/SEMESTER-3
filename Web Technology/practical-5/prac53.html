@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        label {
+            color: rgb(84, 183, 84);
+        }
+    </style>
+
+</head>
+
+<body>
+
+<form>
+
+    <h1 align="center">Create Account</h1>
+
+    <table align="center" cellspacing="10">
+
+        <tr>
+            <td>
+                <label>First Name</label><br>
+                <input type="text" placeholder="Enter Your First Name">
+            </td>
+
+            <td>
+                <label>Last Name</label><br>
+                <input type="text" placeholder="Enter Your Last Name">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <label>Email</label><br>
+                <input type="email" placeholder="Enter Your Email" size="70">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Password</label><br>
+                <input type="password" placeholder="Enter Your Password">
+            </td>
+
+            <td>
+                <label>Confirm Password</label><br>
+                <input type="password" placeholder="Enter Your Password Again">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Gender</label><br>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+            </td>
+
+            <td>
+                <label>Hobbies</label><br>
+                <input type="checkbox" name="H1" value="Music">Music
+                <input type="checkbox" name="H2" value="Sports">Sports
+                <input type="checkbox" name="H3" value="Travel">Travel
+                <input type="checkbox" name="H4" value="Movies">Movies
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Source of Income</label><br>
+
+                <select size="2">
+                    <option>Employed</option>
+                    <option>Business</option>
+                    <option>Student</option>
+                    <option>Other</option>
+                </select>
+            </td>
+
+            <td>
+                <label>Income</label><br>
+                <input type="range" min="0" max="100000" value="20000">
+                <b>20k</b>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Upload Profile Picture</label><br>
+                <input type="file">
+            </td>
+
+            <td>
+                <label>Age</label><br>
+                <input type="number">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <label>Bio</label><br>
+                <textarea rows="3" cols="68"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" align="right">
+                <button type="submit">Create</button>
+            </td>
+        </tr>
+
+    </table>
+
+</form>
+
+</body>
+</html>
