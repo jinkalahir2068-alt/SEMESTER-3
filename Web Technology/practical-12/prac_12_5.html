@@ -1,0 +1,15 @@
+<!-- palindrome or not-->
+ <html>
+    <head></head>
+    <body>
+        <script>
+            var str = prompt("Enter a string:");
+            var reversedStr = str.split('').reverse().join('');
+
+            if (str === reversedStr) {
+                alert(str + " is a palindrome.");
+            } else {
+                alert(str + " is not a palindrome.");
+            }
+        </script>
+    </body>

@@ -1,0 +1,19 @@
+<!--find factorial  of given number.-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var num = parseInt(prompt("Enter a number:"));
+            var factorial = 1;
+
+            if (num < 0) {
+                alert("Factorial is not defined for negative numbers.");
+            } else {
+                for (var i = 1; i <= num; i++) {
+                    factorial *= i;
+                }
+                alert("The factorial of " + num + " is: " + factorial);
+            }
+        </script>
+    </body>
+</html>
