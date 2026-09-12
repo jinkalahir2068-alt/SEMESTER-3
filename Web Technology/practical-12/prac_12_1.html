@@ -1,0 +1,26 @@
+<!--WAP in JavaScript to make simple calculator using popup box.-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var num1 = parseFloat(prompt("Enter first number:"));
+            var num2 = parseFloat(prompt("Enter second number:"));
+            var operator = prompt("Enter operator (+, -, *, /):");
+            var result;
+
+            if (operator == "+") {
+                result = num1 + num2;
+            } else if (operator == "-") {
+                result = num1 - num2;
+            } else if (operator == "*") {
+                result = num1 * num2;
+            } else if (operator == "/") {
+                result = num1 / num2;
+            } else {
+                alert("Invalid operator!");
+            }
+
+            alert("The result is: " + result);
+        </script>
+    </body>
+</html>
