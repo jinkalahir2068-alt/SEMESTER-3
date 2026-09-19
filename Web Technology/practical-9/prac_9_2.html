@@ -1,0 +1,85 @@
+<!-- 2. Write an HTML snippet with CSS for following effects: (B)
+a. Link after visited red color before visited orange color
+b. Add special style(change color,font size etc) to first line of paragraph
+c. Add special style (change color,font size etc) to first letter of paragraph
+d. Change background color to yellow when user select particular text
+e. Add special style to an element when user mouse over it. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects</title>
+
+    <style>
+        
+        a:link {
+            color: orange;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+       
+        p::first-line {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        
+        p::first-letter {
+            color: green;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        
+        ::selection {
+            background-color: yellow;
+            color: black;
+        }
+
+        
+        .box:hover {
+            background-color: lightblue;
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 250px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS Effects</h2>
+
+    <!-- a. Link -->
+    <h3>Link Effect</h3>
+    <a href="https://www.google.com">Visit Google</a>
+
+    <!-- b, c and d. Paragraph -->
+    <h3>Paragraph Effects</h3>
+    <p>
+        This is the first line of the paragraph. It has a special style.
+        The first letter also has a special style. Select any text to see
+        the yellow selection background effect.
+    </p>
+
+    <!-- e. Mouse Hover -->
+    <h3>Mouse Hover Effect</h3>
+    <div class="box">
+        Move your mouse over me!
+    </div>
+
+</body>
+</html>
