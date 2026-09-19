@@ -1,0 +1,107 @@
+<!-- Write HTML, CSS3 code for following animation effects.(A)
+a. Changing the background color of div from red to yellow.
+b. moving div from Left to right, right to bottom, bottom to left and left to top.
+c. put delay of 2s in the animation.
+d. Change the animation-iteration count property of program 2 to run infinite times
+e. Change animation direction property to run it in reverse order.
+f. Change value of the animation-timing-function property to change the speed of the
+animation in css-->
+<html>
+    <head>  
+        <title>Animation Effects</title>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: relative;
+                }
+            .color {
+                animation-name: colorChange;
+                animation-duration: 3s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+        }
+        .move{
+            animation-name: moveDiv;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: linear;
+        }
+        .reverse {
+            animation-name: moveBox;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-timing-function: ease-in-out;
+        }
+        .timing {
+            animation-name: moveBox;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+        @keyframes colorChange {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+        @keyframes moveDiv {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: 100%;
+                top: 0;
+            }
+            50% {
+                left: 100%;
+                top: 100%;
+            }
+            75% {
+                left: 0;
+                top: 100%;
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+         <h2>a. Changing Background Color</h2>
+
+         <div class="box color"></div>
+         <h2>b, c & d. Moving Div with 2s Delay and Infinite Iteration</h2>
+
+        <div class="box move"></div>
+
+        <h2>e. Animation Direction - Reverse</h2>
+        <div class="box reverse"></div>
+
+        
+        <h2>e. Animation Direction - Reverse</h2>
+        <div class="box reverse"></div>
+
+
+        <h2>f. Animation Timing Function</h2>
+        <div class="box timing"></div>
+
+    
+         
+    </body>
+</html>
