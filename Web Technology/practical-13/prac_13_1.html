@@ -1,0 +1,16 @@
+<!--wap in javascript to make simple calculator using popup box-->
+<html>
+    <head></head>
+    <body>
+        <script>
+            var num = parseInt(prompt("enter a number:"));
+            var factors = [];
+            for(var i=1;i<=num;i++){
+                if(num % i === 0){
+                    factors.push(i);
+                }
+                console.log("factors of "+num+ " are "+factors.join(", "));
+            }
+        </script>
+    </body>
+</html>
