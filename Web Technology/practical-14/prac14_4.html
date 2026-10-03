@@ -1,0 +1,43 @@
+<!-- WAP to read an array from the user and sort them using bubble sort. (B) -->
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+                let input = prompt("enter numbers sperated by comma");
+                let arr= input.split(",").map(Number);
+
+                function quicksort(arr)
+                {
+                    if(arr.length<=1)
+                {
+                    return arr;
+                }
+                let pivot = arr[arr.length-1];
+                let left=[];
+                let right=[];
+
+                for(let i = 0;i<arr.length-1;i++)
+                {
+                    if(arr[i]<pivot)
+                    {
+                        left.push(arr[i]);
+                    }
+                    else{
+                        right.push(arr[i]);
+                    }
+                }
+                return quicksort(left).concat(pivot,quicksort(right));
+                }
+                let sortedArray = quicksort(arr);
+                document.writeln("Array after quick sort");
+                
+                for (let i = 0; i < arr.length; i++) {
+
+                        document.writeln(sortedArray[i]);
+                }
+
+        </script>
+    </body>
+</html>
