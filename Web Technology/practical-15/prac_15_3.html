@@ -2,12 +2,21 @@
 <body>
 
 <script>
-    let products = ["Mobile", "Laptop", "Mouse", "Keyboard"];
 
-    for(let i = 0; i < products.length; i++)
-    {
-        document.write(products[i] + "<br>");
-    }
+let products = [
+    {name: "Mobile",price: 25000,model: "Samsung A55"},
+    {name: "Laptop",price: 55000,model: "HP 15"},
+    {name: "Mouse",price: 800,model: "Logitech M90"},
+    {name: "Keyboard",price: 1500, model: "Dell KB216"}
+];
+
+for(let i = 0; i < products.length; i++)
+{
+    document.write("Name : " + products[i].name + "<br>");
+    document.write("Price : " + products[i].price + "<br>");
+    document.write("Model : " + products[i].model + "<br><br>");
+}
+
 </script>
 
 </body>
