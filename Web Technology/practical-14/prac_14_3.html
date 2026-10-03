@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+    <script>
+        let n = Number(prompt("Enter number of elements:"));
+        let arr = [];
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = Number(prompt("Enter element " + (i + 1)));
+        }
+
+        for (let i = 0; i < n - 1; i++) 
+        {
+            for (let j = 0; j < n - i - 1; j++) 
+            {
+
+                if (arr[j] > arr[j + 1]) 
+                {
+                    let temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        document.write("Bubble Sort = " + arr);
+    </script>
+</body>
+</html>
