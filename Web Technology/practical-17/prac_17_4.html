@@ -1,0 +1,21 @@
+<!--wap to recognize which form event is fired-->
+<html>
+    <head></head>
+    <body>
+        <form onsubmit="formSubmit()" onreset="formReset()">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Enter your name">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <script>
+            function formSubmit() {
+                alert("Form is submitted.");
+            }
+            function formReset() {
+                alert("Form is reset.");
+            }
+        </script>
+    </body>
+</html>

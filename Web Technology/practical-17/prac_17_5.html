@@ -1,0 +1,20 @@
+<!--wap to demonstrate change in properties of html element using javascript-->
+<html>
+    <head></head>
+    <body>
+        <p id="myParagraph">Technology has completely transformed the way we communicate, work, and 
+            learn in the modern world. With just a few clicks, we can access a vast library of global 
+            information, connect with people across different continents, and automate repetitive tasks.
+            As tools like artificial intelligence and automation continue to evolve rapidly, they open 
+            up exciting new possibilities for innovation, reshaping industries and creating unique 
+            opportunities for the future.</p>
+        <button onclick="changeProperty()">Change Property</button>
+        <script>
+            function changeProperty() {
+                document.getElementById("myParagraph").style.color = "pink";
+                document.getElementById("myParagraph").style.fontSize = "20px";
+                document.getElementById("myParagraph").style.fontFamily = "sans-serif";
+            }
+        </script>
+    </body>
+</html>

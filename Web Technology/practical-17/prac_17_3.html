@@ -1,0 +1,18 @@
+<!--wap to recognize which all keyboard event is fired-->
+<html>
+    <head></head>
+    <body>
+        <input type="text" id="myInput" onkeydown="keyDown()" onkeyup="keyUp()" onkeypress="keyPress()">
+        <script>
+            function keyDown() {
+                alert("Key is pressed down.");
+            }
+            function keyUp() {
+                alert("Key is released.");
+            }
+            function keyPress() {
+                alert("Key is pressed.");
+            }
+        </script>
+    </body>
+</html>

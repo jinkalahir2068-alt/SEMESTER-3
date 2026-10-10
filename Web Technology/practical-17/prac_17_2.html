@@ -1,0 +1,27 @@
+<!--wap to recognize which mouse event is fired-->
+<html>
+    <head></head>
+    <body>
+        <button onmousedown="mouseDown()" 
+        onmouseup="mouseUp()" 
+        onmouseover="mouseOver()" 
+        onmouseout="mouseout()" 
+        onmousemove="mousemove()">Click Me</button>
+        <script>
+            function mouseDown() {
+                alert("Mouse button is pressed down.");
+            }
+            function mouseUp() {
+                alert("Mouse button is released.");
+            }
+            function mouseOver(){
+                alert("mouse is over the button");
+            }
+            function mouseout(){
+                alert("mouse is out of the button");
+            }
+            function mousemove(){
+                alert("mouse is moving over the button");
+            }
+        </script>
+    </body>
